@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import UIKit
+import Cocoa
+var str = "Hello, world NASTIA"
+
+// Задание 1: Решение квадратного уравнения.
+var a:Float = 1
+var b:Float = -4
+var c:Float = 3
+var decision1:Float
+var decision2:Float
+var discriminant:Float = pow(b, 2) - (4 * a * c)
+
+if (discriminant &gt; 0){
+    decision1 = ((-b) + sqrt(discriminant)) / (2 * a)
+    decision2 = ((-b) - sqrt(discriminant)) / (2 * a)
+    print(" Первое решение уравнения \(decision1)","\n","Второе решение уравнения \(decision2)")
+} else if (discriminant == 0){
+    decision1 = (-b) / (2 * a)
+    print("Решение уравнения \(decision1)")
+} else if (discriminant &lt; 0){
+    print("У уравнения нет решений!")
+}
+
+//Задание 2: Нахождение площади, периметра и гипотенузы треугольника.
+var leg1:Float = 1
+var leg2:Float = 1
+
+var square:Float = (1 / 2) * leg1 * leg2
+var hypotenuse:Float = sqrt(pow(leg1, 2) + pow(leg2, 2))
+var perimetr:Float = hypotenuse + leg1 + leg2
+
+print("Площадь треугольника равна \(square)")
+print("Периметр треугольника равна \(perimetr)")
+print("Гипотенуза треугольника равна \(hypotenuse)")
+
+//Задание 3: Найти сумму вклада через 5 лет, зная сумму депозита и процент.
+var depositAmount:Float = 100
+var percent:Float = 10
+
+var percentValue:Float = 1 + (percent / 100)
+var totalAmount:Float = depositAmount * (pow(percentValue, 5))
+print("Сумма вашего вклада через 5 лет составит \(totalAmount)")
+
+
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1359}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
